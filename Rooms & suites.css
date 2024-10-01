@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #060606;
+    color: #fff;
+}
+
+.home-nav.active{
+    color: #f9c931;
+    background-color: #f9c931;
+    border-radius: 5px;
+}
+
+a:hover{
+    color: #FFDF34;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    background-color: #222;
+    padding: 10px 20px ;
+}
+.top-bar{
+    display: flex;
+    font-family: "Roboto Condensed", sans-serif;
+    justify-content: space-between;
+    align-items: right;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 13px;
+}
+header span{
+    padding-right: 95px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.top-bar p{
+    padding-left: 35px;
+}
+nav ul{
+    display: flex;
+    margin-top: 18px;
+    padding-left: 50px;
+    list-style: none;
+    gap: 30px;
+    font-weight: bold;
+}
+nav ul li {
+    margin-left: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: #f9c931;
+    transition: 0.4sec ease;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.BOOK-NOW{
+    width: 100px;
+    padding: 9px;
+    color:#FFD600 ;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #222;
+    cursor: pointer;
+    margin-top: -10px;
+    text-align: center;
+    border-color: transparent;
+    border: 1.5px solid #FFD600;
+}
+
+
+.rooms-rates{
+    background-image: url(./assest/Rectangle\ 3\ \(1\).png);
+    width: 100%;
+    height: 500px;
+   text-align: center;
+   padding: 100px 30px;
+}
+.rooms-rates h2{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    align-items: center;
+    color: #fff;
+    margin-top: 7.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+.check{
+   text-align: center;
+   background: color #000000;
+   margin-bottom: 30px;
+}
+.check span{
+    background-color: #ffffff;
+    color:#363636;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -1px;
+    padding-left: 30px;
+    padding-right: 40px;
+ 
+}
+
+.check .date-info{
+    border-radius: 5px 0 0  5px;
+    padding-left: 40px;
+    padding-right: 90px;
+    margin-right: 2px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.check .stay-info{
+    margin-right: -4px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.check-rates{
+    padding: 9.6px 16px;
+    background-color:#FFDF34;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #363636;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.rooms-content{
+    background-color:#00000062;
+    margin-top: 60px;
+   
+}
+.room-list{
+    display: flex;
+    gap: 34px;
+    height:520px ;
+    width: 732px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.filter-group{
+    margin-bottom: 40px;
+}
+.filter-group h4{
+    background-color: #FFDF34;
+    color: black;
+   padding: 10px;
+   font-size: 24px;
+   border-radius: 5px;
+   font-weight: 700;
+   text-align: center;
+   margin-bottom: 30px;
+   width: 327px;
+   border-radius: 0px 0px 0px 0px;
+   text-transform: uppercase;
+   font-family: "Roboto Condensed", sans-serif;
+}
+.filter-group label{
+    font-family: "Roboto", sans-serif;
+}
+
+.filter-group ul li{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+  padding-left: 4rem;
+}
+
+.filter-group ul li input:hover{
+    cursor: pointer;
+    background-color: #FFDF34;
+}
+
+
+.side-filters{
+    background-color: black;
+    height: 860px;
+   
+}
+
+.room-card img{
+    width: 328px;
+    height: 305px;
+}
+.room-info{
+    width: 328px;
+    height: 215px;
+    border: 1.5px solid #fff;
+    margin-top: -4px;
+    position: relative;
+}
+.room-info h3{
+    margin-top: 20px;
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+font-family: "Roboto Condensed", sans-serif;
+
+}
+.room-card p{
+    padding-top: 10px;
+font-size: 14px;
+font-weight: 400;
+text-align: start;
+text-transform: capitalize;
+margin-left: 20px;
+/* margin-inline-start: -55px; */
+font-family: "Roboto", sans-serif;
+}
+.book-now{
+    width: 279px;
+    padding: 10px;
+    color:#FFD600 ;
+    margin-left: 1.6rem;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 35px;
+    text-transform: capitalize;
+    background-color: #222;
+    cursor: pointer;
+    border: 1px solid #FFD600;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.budget h4{
+    background-color: #FFDF34;
+    color: black;
+   padding: 10px;
+   font-size: 24px;
+   border-radius: 5px;
+   font-weight: 700;
+   text-align: center;
+   margin-bottom: 30px;
+   width: 327px;
+   border-radius: 0px 0px 0px 0px;
+  text-transform: uppercase;
+}
+.budget{
+    margin-top: 100px;
+}
+.budget h5{
+font-size: 18px;
+font-weight: 400;
+text-transform: capitalize;
+text-align: center;
+padding-bottom: 10px;
+font-family: "Roboto", sans-serif;
+}
+.budget span{
+font-size: 18px;
+font-weight: 400;
+text-align: center;
+margin-inline-start: 50px;
+font-family: "Roboto", sans-serif;
+
+}
+.range{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.range .radio{
+    width: 31px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    border: 4px solid black;
+    cursor: pointer;
+  margin-top: -10px;
+}
+.range .line{
+    background-color: #FFDF34;
+    width: 220px;
+    height: 8px;
+}
+.budget button{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    width: 275px;
+    padding: 5px;
+    color: #FFD600;
+    margin-top: 20px;
+    background-color: #000000;
+    border: 1px solid #FFD600;
+    margin-left: 30px;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+.budget button:hover{
+    cursor: pointer;
+}
+
+.page{
+   text-align: center;
+   font-size: 14px;
+   font-weight: 400;
+   font-family: "Roboto", sans-serif;
+}
+.page span{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+    
+}
+
+
+.page button{
+    background-color: #FFD600;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    width: 66px;
+    height: 31px;
+
+}
+
+
+
+
+
+footer{
+    background-color: black;
+    margin-top: 100px;
+
+   
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  height: 200px;
+  color: #fff;
+}
+.footer-main{
+    padding: 0 15px;
+}
+.footer-main h3{
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-weight: 700;
+    size: 20px;
+    line-height: 34.14px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.footer-main ul{
+list-style: none;
+padding: 0;
+font-family: "Roboto", sans-serif;
+}
+.footer-main ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+.footer-main form .btn-form{
+    display: flex;
+}
+.footer-main input[type="email"]{
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: #4B4B4B;
+}
+.footer-main button{
+    background-color: #FFDF34;
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: "Roboto", sans-serif;
+}
+.footer-main .follow{
+    font-family: "Roboto", sans-serif;
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-inline-start: -85px;
+    font-family: "Roboto", sans-serif;
+}
+.social-media a{
+    margin-right: 10px;
+    padding-right: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+.footer-terms{
+    text-align: center;
+    padding: 10px 0;
+    background-color: #111;
+    font-size: 20px;
+ padding-bottom: 40px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight:300 ;
+}
